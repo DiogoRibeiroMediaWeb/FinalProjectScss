@@ -302,3 +302,38 @@
 .display-none {
     display: none;
 }
+
+
+.layout-side .app-menu-content {
+    background-color: var(--side-menu-color);
+}
+
+.border-soft {
+   border-color: var(--color-border-soft); 
+}
+
+.text-main {
+    color: var(--color-text-main);
+}
+.text-soft {
+    color: var(--color-text-soft);
+}
+.text-subtle {
+    color: var(--color-text-subtle);
+}
+.text-main-inverse {
+    color: var(--color-text-main-inverse);
+}
+.text-main-on-contrast {
+    color: var(--color-text-on-contrast);
+}
+
+.bg-content {
+    background-color: var(--color-background-content);
+}
+.bg-soft {
+    background-color: var(--color-background-soft);
+}
+.bg-subtle {
+    background-color: var(--color-background-subtle);
+}
