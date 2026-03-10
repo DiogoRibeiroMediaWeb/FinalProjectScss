@@ -15,8 +15,20 @@
 .text-primary-darker   {color: var(--color-primary-darker);   }
 .text-primary-darkest  {color: var(--color-primary-darkest);  }
 
-.background-secondary { background-color: var(--color-secondary); }
-.background-secondary-lightest { background-color: var(--color-neutral-0); }
+.background-secondary {
+  background-color: var(--color-secondary); }
+  .background-secondary-lightest {
+    background-color: var(--color-secondary-lightest); }
+  .background-secondary-lighter {
+    background-color: var(--color-secondary-lighter); }
+  .background-secondary-light {
+    background-color: var(--color-secondary-light); }
+  .background-secondary-dark {
+    background-color: var(--color-secondary-dark); }
+  .background-secondary-darker {
+    background-color: var(--color-secondary-darker); }
+  .background-secondary-darkest {
+    background-color: var(--color-secondary-darkest); }
 
 .text-secondary { color: var(--color-secondary); }
 .text-secondary-darker { color: var(--color-secondary); }
@@ -336,4 +348,8 @@
 }
 .bg-subtle {
     background-color: var(--color-background-subtle);
+}
+
+.font-medium {
+    font-weight: var(--font-medium);
 }

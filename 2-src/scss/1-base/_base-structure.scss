@@ -7,10 +7,7 @@
 :root {
     /* Color - Brand */
     --color-primary-dark: #32006b;
-    --color-primary: #6400dc;
     --color-primary-light: #c199f1;
-
-    --color-secondary: #2d9fb2;
 
     --color-primary-hover: var(--color-primary-dark);
     --color-primary-selected: var(--color-primary-dark);
@@ -36,26 +33,7 @@
     --font-size-label: #{scss-functions.px-to-rem(11px)};
 
     
-    /* Color - Neutral */
-    --color-neutral-0: #ffffff;
-    --color-neutral-1: #f8f9fa;
-    --color-neutral-2: #f1f3f5;
-    --color-neutral-3: #e9ecef;
-    --color-neutral-4: #dee2e6;
-    --color-neutral-5: #ced4da;
-    --color-neutral-6: #adb5bd;
-    --color-neutral-7: #6a7178;
-    --color-neutral-8: #4f575e;
-    --color-neutral-9: #272b30;
-    --color-neutral-10: #101213;
-
-    /* Color - states */
-    --color-error: #e03131;
-    --color-success: #2A843c;
-    --color-warning: #e9a100;
-    --color-info: #009dde;
-    
-
+    //este preciso alterar 
     /* Color - primary */
     --color-primary-darkest: #28065c;
     --color-primary-darker: #5102b0;
@@ -65,17 +43,26 @@
     --color-primary-lighter: #ece4ff;
     --color-primary-lightest: #f4f0ff;
 
-    /* Color - secundary */
-    --color-secundary-darkest: #0c454f;
-    --color-secundary-darker: #0c454f;
-    --color-secundary-dark: #105966;
-    --color-secundary: #107485;
-    --color-secundary-light: #9ed7e0;
-    --color-secundary-lighter: #e2f3f6;
-    --color-secundary-lightest: #e2f3f6;
+    /* Color - secondary */
+    --color-secondary-darkest: #0c454f;
+    --color-secondary-darker: #0c454f;
+    --color-secondary-dark: #105966;
+    --color-secondary: #107485;
+    --color-secondary-light: #9ed7e0;
+    --color-secondary-lighter: #e2f3f6;
+    --color-secondary-lightest: #e2f3f6;
 
     /* Font - weight */
-    --font-weight-regular: 500;
+    --font-medium: 500;
+
+    /* Border radius */
+    --border-radius-xs: 4px;
+    --border-radius-s: 8px;
+    --border-radius-m: 16px;
+    --border-radius-base: 24px;
+    --border-radius-l: 32px;
+    --border-radius-xl: 40px;
+    --border-radius-xxl: 48px;
 }
 
 .highlight-styles,

@@ -1,0 +1,1295 @@
+/* ==================================================================== */
+/* ==================================================================== */
+/*  ClientName Theme - Based on OutSystems UI                           */
+/*  Created by https://mediaweb.pt/                                     */
+/* ==================================================================== */
+/*  $1 - Base & HTML Elements                                           */
+/*  $2 - Layouts                                                        */
+/*  $3 - SoWhat Patterns                                                */
+/*  $4 - Widgets                                                        */
+/*  $5 - Useful Classes                                                 */
+/* ==================================================================== */
+/* ==================================================================== */
+/* ==================================================================== */
+/*  $0 - Abstract                                                       */
+/* ==================================================================== */
+/* ==================================================================== */
+/*  $1 - Base & HTML Elements                                           */
+/* ==================================================================== */
+/* ==================================================================== */
+/*  Root - CSS Variables                                                */
+/* ==================================================================== */
+:root {
+  /* Color - Brand */
+  --color-primary-dark: #32006b;
+  --color-primary-light: #c199f1;
+  --color-primary-hover: var(--color-primary-dark);
+  --color-primary-selected: var(--color-primary-dark);
+  --header-size: 56px;
+  --header-size-content: 48px;
+  --side-menu-size: 280px;
+  /* Color - font-size*/
+  --font-size-display: 2.25rem;
+  --font-size-h1: 2rem;
+  --font-size-h2: 1.75rem;
+  --font-size-h3: 1.625rem;
+  --font-size-h4: 1.375rem;
+  --font-size-h5: 1.25rem;
+  --font-size-h6: 1.125rem;
+  --font-size-base: 1rem;
+  --font-size-s: 0.875rem;
+  --font-size-xs: 0.75rem;
+  --font-size-label: 0.6875rem;
+  /* Color - primary */
+  --color-primary-darkest: #28065c;
+  --color-primary-darker: #5102b0;
+  --color-primary-dark: #6400dc;
+  --color-primary: #8637fb;
+  --color-primary-light: #dacdff;
+  --color-primary-lighter: #ece4ff;
+  --color-primary-lightest: #f4f0ff;
+  /* Color - secondary */
+  --color-secondary-darkest: #0c454f;
+  --color-secondary-darker: #0c454f;
+  --color-secondary-dark: #105966;
+  --color-secondary: #107485;
+  --color-secondary-light: #9ed7e0;
+  --color-secondary-lighter: #e2f3f6;
+  --color-secondary-lightest: #e2f3f6;
+  /* Font - weight */
+  --font-medium: 500;
+  /* Border radius */
+  --border-radius-xs: 4px;
+  --border-radius-s: 8px;
+  --border-radius-m: 16px;
+  --border-radius-base: 24px;
+  --border-radius-l: 32px;
+  --border-radius-xl: 40px;
+  --border-radius-xxl: 48px;
+}
+
+.highlight-styles,
+.os-dark-mode {
+  --color-primary-dark: #6400dc;
+  --color-primary: #a799ff;
+  --color-primary-light: #e2c9ff;
+  --color-neutral-0: #0e0e0e;
+  --color-neutral-1: #141414;
+  --color-neutral-2: #1f1f1f;
+  --color-neutral-3: #252525;
+  --color-neutral-4: #282828;
+  --color-neutral-5: #323232;
+  --color-neutral-6: #858585;
+  --color-neutral-7: #c9c9c9;
+  --color-neutral-8: #d7d7d7;
+  --color-neutral-9: #F8F9FA;
+  --color-neutral-10: #fff;
+  --header-color: var(--color-neutral-3);
+  color: var(--color-neutral-9);
+}
+
+.os-dark-mode {
+  --color-background-body: #101213;
+}
+
+.os-dark-mode .highlight-styles {
+  --color-primary-dark: #32006b;
+  --color-primary: #6400dc;
+  --color-primary-light: #c199f1;
+  --color-neutral-0:#ffffff;
+  --color-neutral-1:#f8f9fa;
+  --color-neutral-2:#f1f3f5;
+  --color-neutral-3:#e9ecef;
+  --color-neutral-4:#dee2e6;
+  --color-neutral-5:#ced4da;
+  --color-neutral-6:#adb5bd;
+  --color-neutral-7:#6a7178;
+  --color-neutral-8:#4f575e;
+  --color-neutral-9:#272b30;
+  --color-neutral-10:#101213;
+}
+
+:root {
+  /* Rocket Generic variable colors */
+  /* input */
+  --color-background-input: #fff;
+  --color-background-input-disabled: #F1F3F5;
+  --color-background-input-results: #fff;
+  --color-background-content-disabled: #0000001A;
+  /* backgrounds */
+  --color-background-content: #fff;
+  --color-background-soft: #dadada;
+  --color-background-subtle: #b4b4b4;
+  --color-background-opacity-soft: rgba(0, 0, 0, 0.12);
+  --color-background-opacity-subtle: rgba(0, 0, 0, 0.06);
+  /* text */
+  --color-text-main: #272b30;
+  --color-text-on-contrast: #000000;
+  --color-text-main-inverse: #fff;
+  --color-text-soft: #272B30;
+  --color-text-subtle: #4F575E;
+  --color-text-active: #6400DC;
+  --color-text-disabled: rgba(0, 0, 0, 0.3);
+  --color-text-input: #101213;
+  --color-text-main-opacity: rgba(0, 0, 0, 0.9);
+  --color-text-soft-opacity: rgba(0, 0, 0, 0.75);
+  --color-text-subtle-opacity: rgba(0, 0, 0, 0.6);
+  /* borders */
+  --color-border-input: #6A7178;
+  --color-border-input-hover: #4F575E;
+  --color-border-soft: rgba(0, 0, 0, 0.1);
+  --color-border-focus: #77B7EE;
+  --color-border-shadow: rgba(0, 0, 0, 0.1);
+  /* scroll */
+  --color-scrollbar-track: #F1F3F5;
+  --color-scrollbar-handle: #DEE2E6;
+  --color-scrollbar-handle-hover: #CED4DA;
+  --color-transparent: transparent;
+  /* Colors - Accessibility */
+  --color-focus-outer: var(--color-border-focus);
+  --color-focus-inner: var(--color-border-focus);
+  --color-primary-hover: var(--color-primary-light);
+  --color-primary-selected: var(--color-primary-lightest);
+  /* Icon */
+  --icon-size: 16px;
+  --icon-artboard-size: 24px;
+  /* Border Radius */
+  --border-radius-none: 0;
+  --border-radius-soft: 8px;
+  --border-radius-medium: 16px;
+  --border-radius-rounded: 24px;
+  --border-radius-circle: 100%;
+  /* Border Size */
+  --border-size-default: var(--border-size-s);
+  /* Shadows (Elevations) */
+  --shadow-none: none;
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.1);
+  --shadow-s: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-m: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-l: 0 6px 8px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 8px 10px rgba(0, 0, 0, 0.1);
+  --rkt-generic-shadow: var(--shadow-none);
+  /* form */
+  --form-element-height-small: 32px;
+  --form-element-height-medium: 40px;
+  --form-element-height-large: 48px;
+  --form-element-bg: var(--color-background-input);
+  --form-element-radius: var(--border-radius-soft);
+  --form-element-border: var(--border-size-default) solid var(--color-border-input);
+  --form-element-text: var(--color-text-input);
+  /* App Settings */
+  --border-radius-content: var(--border-radius-medium);
+  --color-background-login: var(--color-background-body);
+  --focus-shadow: 0 0 0 3px var(--color-border-focus);
+  --header-color: var(--color-background-content);
+  --header-size: 56px;
+  --header-size-content: 48px;
+  --bottom-bar-size: 56px;
+  --side-menu-color: var(--color-background-content);
+}
+
+.highlight-styles,
+.os-dark-mode {
+  --color-background-body: #101213;
+  /* input */
+  --color-background-input: rgba(255, 255, 255, 0.06);
+  --color-background-input-results: #272B30;
+  --color-background-input-disabled: #6A7178;
+  /* backgrounds */
+  --color-background-content: #272B30;
+  --color-background-soft: #414141;
+  --color-background-subtle: #666666;
+  --color-background-opacity-soft: rgba(255, 255, 255, 0.12);
+  --color-background-opacity-subtle: rgba(255, 255, 255, 0.6);
+  /* text */
+  --color-text-main: #F1F3F5;
+  --color-text-on-contrast: #FFFFFF;
+  --color-text-main-inverse: #101213;
+  --color-text-soft: #dcdcdc;
+  --color-text-subtle: #bebebe;
+  --color-text-active: #A357FF;
+  --color-text-disabled: rgba(255, 255, 255, 0.3);
+  --color-text-input: #F1F3F5;
+  --color-text-main-opacity: rgba(255, 255, 255, 0.9);
+  --color-text-soft-opacity: rgba(255, 255, 255, 0.75);
+  --color-text-subtle-opacity: rgba(255, 255, 255, 0.6);
+  /* border */
+  --color-border-input: rgba(255, 255, 255, 0.3);
+  --color-border-input-hover: #F1F3F5;
+  --color-border-soft: rgba(255, 255, 255, 0.1);
+  --color-border-shadow: rgba(255, 255, 255, 0.1);
+  /* scroll */
+  --color-scrollbar-track: #6A7178;
+  --color-scrollbar-handle: #4F575E;
+  --color-scrollbar-handle-hover: #272B30;
+  /* App Settings */
+  --color-background-login: var(--color-background-body);
+  --focus-shadow: 0 0 0 3px var(--color-border-focus);
+  --header-color: #212121;
+  --side-menu-color: var(--color-background-content);
+}
+
+.os-dark-mode .highlight-styles {
+  /* backgrounds */
+  --color-background-content: #fff;
+  --color-background-soft: #dadada;
+  --color-background-subtle: #b4b4b4;
+  /* text */
+  --color-text-main: #272b30;
+  --color-text-main-inverse: #fff;
+  --color-text-soft: #272B30;
+  --color-text-subtle: #4F575E;
+}
+
+/* ==================================================================== */
+/*  $2 - Layouts                                                        */
+/* ==================================================================== */
+html, body {
+  font-family: Raleway, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* ==================================================================== */
+/*  $3 - Widgets                                                        */
+/* ==================================================================== */
+/*  Widgets > Button Group                                              */
+/*  Widgets > Table                                                     */
+/* ==================================================================== */
+/*  $4 - Patterns                                                       */
+/* ==================================================================== */
+/* ClientName Patterns > ExamplePattern                                 */
+/*.example-pattern {
+    position: relative;
+
+    &-child-element-1 {
+        display: block;
+    }
+
+    &-child-element-2 {
+        display: block;
+    }
+}*/
+/* ==================================================================== */
+/*  $5 - Useful Classes                                                 */
+/* ==================================================================== */
+/* $6.2.1 - Styles - Colors - Brand */
+.background-primary {
+  background-color: var(--color-primary);
+}
+
+.background-primary-lightest {
+  background-color: var(--color-primary-lightest);
+}
+
+.background-primary-lighter {
+  background-color: var(--color-primary-lighter);
+}
+
+.background-primary-light {
+  background-color: var(--color-primary-light);
+}
+
+.background-primary-dark {
+  background-color: var(--color-primary-dark);
+}
+
+.background-primary-darker {
+  background-color: var(--color-primary-darker);
+}
+
+.background-primary-darkest {
+  background-color: var(--color-primary-darkest);
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-primary-lightest {
+  color: var(--color-primary-lightest);
+}
+
+.text-primary-lighter {
+  color: var(--color-primary-lighter);
+}
+
+.text-primary-light {
+  color: var(--color-primary-light);
+}
+
+.text-primary-dark {
+  color: var(--color-primary-dark);
+}
+
+.text-primary-darker {
+  color: var(--color-primary-darker);
+}
+
+.text-primary-darkest {
+  color: var(--color-primary-darkest);
+}
+
+.background-secondary {
+  background-color: var(--color-secondary);
+}
+
+.background-secondary-lightest {
+  background-color: var(--color-secondary-lightest);
+}
+
+.background-secondary-lighter {
+  background-color: var(--color-secondary-lighter);
+}
+
+.background-secondary-light {
+  background-color: var(--color-secondary-light);
+}
+
+.background-secondary-dark {
+  background-color: var(--color-secondary-dark);
+}
+
+.background-secondary-darker {
+  background-color: var(--color-secondary-darker);
+}
+
+.background-secondary-darkest {
+  background-color: var(--color-secondary-darkest);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.text-secondary-darker {
+  color: var(--color-secondary);
+}
+
+/* $6.2.2 - Styles - Colors - Extendend */
+.background-red-lightest {
+  background-color: var(--color-red-lightest);
+}
+
+.background-red-lighter {
+  background-color: var(--color-red-lighter);
+}
+
+.background-red-light {
+  background-color: var(--color-red-light);
+}
+
+.background-red {
+  background-color: var(--color-red);
+}
+
+.background-red-dark {
+  background-color: var(--color-red-dark);
+}
+
+.background-red-darker {
+  background-color: var(--color-red-darker);
+}
+
+.background-red-darkest {
+  background-color: var(--color-red-darkest);
+}
+
+.text-red-lightest {
+  color: var(--color-red-lightest);
+}
+
+.text-red-lighter {
+  color: var(--color-red-lighter);
+}
+
+.text-red-light {
+  color: var(--color-red-light);
+}
+
+.text-red {
+  color: var(--color-red);
+}
+
+.text-red-dark {
+  color: var(--color-red-dark);
+}
+
+.text-red-darker {
+  color: var(--color-red-darker);
+}
+
+.text-red-darkest {
+  color: var(--color-red-darkest);
+}
+
+.background-pink-lightest {
+  background-color: var(--color-pink-lightest);
+}
+
+.background-pink-lighter {
+  background-color: var(--color-pink-lighter);
+}
+
+.background-pink-light {
+  background-color: var(--color-pink-light);
+}
+
+.background-pink {
+  background-color: var(--color-pink);
+}
+
+.background-pink-dark {
+  background-color: var(--color-pink-dark);
+}
+
+.background-pink-darker {
+  background-color: var(--color-pink-darker);
+}
+
+.background-pink-darkest {
+  background-color: var(--color-pink-darkest);
+}
+
+.text-pink-lightest {
+  color: var(--color-pink-lightest);
+}
+
+.text-pink-lighter {
+  color: var(--color-pink-lighter);
+}
+
+.text-pink-light {
+  color: var(--color-pink-light);
+}
+
+.text-pink {
+  color: var(--color-pink);
+}
+
+.text-pink-dark {
+  color: var(--color-pink-dark);
+}
+
+.text-pink-darker {
+  color: var(--color-pink-darker);
+}
+
+.text-pink-darkest {
+  color: var(--color-pink-darkest);
+}
+
+.background-grape-lightest {
+  background-color: var(--color-grape-lightest);
+}
+
+.background-grape-lighter {
+  background-color: var(--color-grape-lighter);
+}
+
+.background-grape-light {
+  background-color: var(--color-grape-light);
+}
+
+.background-grape {
+  background-color: var(--color-grape);
+}
+
+.background-grape-dark {
+  background-color: var(--color-grape-dark);
+}
+
+.background-grape-darker {
+  background-color: var(--color-grape-darker);
+}
+
+.background-grape-darkest {
+  background-color: var(--color-grape-darkest);
+}
+
+.text-grape-lightest {
+  color: var(--color-grape-lightest);
+}
+
+.text-grape-lighter {
+  color: var(--color-grape-lighter);
+}
+
+.text-grape-light {
+  color: var(--color-grape-light);
+}
+
+.text-grape {
+  color: var(--color-grape);
+}
+
+.text-grape-dark {
+  color: var(--color-grape-dark);
+}
+
+.text-grape-darker {
+  color: var(--color-grape-darker);
+}
+
+.text-grape-darkest {
+  color: var(--color-grape-darkest);
+}
+
+.background-violet-lightest {
+  background-color: var(--color-violet-lightest);
+}
+
+.background-violet-lighter {
+  background-color: var(--color-violet-lighter);
+}
+
+.background-violet-light {
+  background-color: var(--color-violet-light);
+}
+
+.background-violet {
+  background-color: var(--color-violet);
+}
+
+.background-violet-dark {
+  background-color: var(--color-violet-dark);
+}
+
+.background-violet-darker {
+  background-color: var(--color-violet-darker);
+}
+
+.background-violet-darkest {
+  background-color: var(--color-violet-darkest);
+}
+
+.text-violet-lightest {
+  color: var(--color-violet-lightest);
+}
+
+.text-violet-lighter {
+  color: var(--color-violet-lighter);
+}
+
+.text-violet-light {
+  color: var(--color-violet-light);
+}
+
+.text-violet {
+  color: var(--color-violet);
+}
+
+.text-violet-dark {
+  color: var(--color-violet-dark);
+}
+
+.text-violet-darker {
+  color: var(--color-violet-darker);
+}
+
+.text-violet-darkest {
+  color: var(--color-violet-darkest);
+}
+
+.background-indigo-lightest {
+  background-color: var(--color-indigo-lightest);
+}
+
+.background-indigo-lighter {
+  background-color: var(--color-indigo-lighter);
+}
+
+.background-indigo-light {
+  background-color: var(--color-indigo-light);
+}
+
+.background-indigo {
+  background-color: var(--color-indigo);
+}
+
+.background-indigo-dark {
+  background-color: var(--color-indigo-dark);
+}
+
+.background-indigo-darker {
+  background-color: var(--color-indigo-darker);
+}
+
+.background-indigo-darkest {
+  background-color: var(--color-indigo-darkest);
+}
+
+.text-indigo-lightest {
+  color: var(--color-indigo-lightest);
+}
+
+.text-indigo-lighter {
+  color: var(--color-indigo-lighter);
+}
+
+.text-indigo-light {
+  color: var(--color-indigo-light);
+}
+
+.text-indigo {
+  color: var(--color-indigo);
+}
+
+.text-indigo-dark {
+  color: var(--color-indigo-dark);
+}
+
+.text-indigo-darker {
+  color: var(--color-indigo-darker);
+}
+
+.text-indigo-darkest {
+  color: var(--color-indigo-darkest);
+}
+
+.background-blue-lightest {
+  background-color: var(--color-blue-lightest);
+}
+
+.background-blue-lighter {
+  background-color: var(--color-blue-lighter);
+}
+
+.background-blue-light {
+  background-color: var(--color-blue-light);
+}
+
+.background-blue {
+  background-color: var(--color-blue);
+}
+
+.background-blue-dark {
+  background-color: var(--color-blue-dark);
+}
+
+.background-blue-darker {
+  background-color: var(--color-blue-darker);
+}
+
+.background-blue-darkest {
+  background-color: var(--color-blue-darkest);
+}
+
+.text-blue-lightest {
+  color: var(--color-blue-lightest);
+}
+
+.text-blue-lighter {
+  color: var(--color-blue-lighter);
+}
+
+.text-blue-light {
+  color: var(--color-blue-light);
+}
+
+.text-blue {
+  color: var(--color-blue);
+}
+
+.text-blue-dark {
+  color: var(--color-blue-dark);
+}
+
+.text-blue-darker {
+  color: var(--color-blue-darker);
+}
+
+.text-blue-darkest {
+  color: var(--color-blue-darkest);
+}
+
+.background-cyan-lightest {
+  background-color: var(--color-cyan-lightest);
+}
+
+.background-cyan-lighter {
+  background-color: var(--color-cyan-lighter);
+}
+
+.background-cyan-light {
+  background-color: var(--color-cyan-light);
+}
+
+.background-cyan {
+  background-color: var(--color-cyan);
+}
+
+.background-cyan-dark {
+  background-color: var(--color-cyan-dark);
+}
+
+.background-cyan-darker {
+  background-color: var(--color-cyan-darker);
+}
+
+.background-cyan-darkest {
+  background-color: var(--color-cyan-darkest);
+}
+
+.text-cyan-lightest {
+  color: var(--color-cyan-lightest);
+}
+
+.text-cyan-lighter {
+  color: var(--color-cyan-lighter);
+}
+
+.text-cyan-light {
+  color: var(--color-cyan-light);
+}
+
+.text-cyan {
+  color: var(--color-cyan);
+}
+
+.text-cyan-dark {
+  color: var(--color-cyan-dark);
+}
+
+.text-cyan-darker {
+  color: var(--color-cyan-darker);
+}
+
+.text-cyan-darkest {
+  color: var(--color-cyan-darkest);
+}
+
+.background-teal-lightest {
+  background-color: var(--color-teal-lightest);
+}
+
+.background-teal-lighter {
+  background-color: var(--color-teal-lighter);
+}
+
+.background-teal-light {
+  background-color: var(--color-teal-light);
+}
+
+.background-teal {
+  background-color: var(--color-teal);
+}
+
+.background-teal-dark {
+  background-color: var(--color-teal-dark);
+}
+
+.background-teal-darker {
+  background-color: var(--color-teal-darker);
+}
+
+.background-teal-darkest {
+  background-color: var(--color-teal-darkest);
+}
+
+.text-teal-lightest {
+  color: var(--color-teal-lightest);
+}
+
+.text-teal-lighter {
+  color: var(--color-teal-lighter);
+}
+
+.text-teal-light {
+  color: var(--color-teal-light);
+}
+
+.text-teal {
+  color: var(--color-teal);
+}
+
+.text-teal-dark {
+  color: var(--color-teal-dark);
+}
+
+.text-teal-darker {
+  color: var(--color-teal-darker);
+}
+
+.text-teal-darkest {
+  color: var(--color-teal-darkest);
+}
+
+.background-green-lightest {
+  background-color: var(--color-green-lightest);
+}
+
+.background-green-lighter {
+  background-color: var(--color-green-lighter);
+}
+
+.background-green-light {
+  background-color: var(--color-green-light);
+}
+
+.background-green {
+  background-color: var(--color-green);
+}
+
+.background-green-dark {
+  background-color: var(--color-green-dark);
+}
+
+.background-green-darker {
+  background-color: var(--color-green-darker);
+}
+
+.background-green-darkest {
+  background-color: var(--color-green-darkest);
+}
+
+.text-green-lightest {
+  color: var(--color-green-lightest);
+}
+
+.text-green-lighter {
+  color: var(--color-green-lighter);
+}
+
+.text-green-light {
+  color: var(--color-green-light);
+}
+
+.text-green {
+  color: var(--color-green);
+}
+
+.text-green-dark {
+  color: var(--color-green-dark);
+}
+
+.text-green-darker {
+  color: var(--color-green-darker);
+}
+
+.text-green-darkest {
+  color: var(--color-green-darkest);
+}
+
+.background-lime-lightest {
+  background-color: var(--color-lime-lightest);
+}
+
+.background-lime-lighter {
+  background-color: var(--color-lime-lighter);
+}
+
+.background-lime-light {
+  background-color: var(--color-lime-light);
+}
+
+.background-lime {
+  background-color: var(--color-lime);
+}
+
+.background-lime-dark {
+  background-color: var(--color-lime-dark);
+}
+
+.background-lime-darker {
+  background-color: var(--color-lime-darker);
+}
+
+.background-lime-darkest {
+  background-color: var(--color-lime-darkest);
+}
+
+.text-lime-lightest {
+  color: var(--color-lime-lightest);
+}
+
+.text-lime-lighter {
+  color: var(--color-lime-lighter);
+}
+
+.text-lime-light {
+  color: var(--color-lime-light);
+}
+
+.text-lime {
+  color: var(--color-lime);
+}
+
+.text-lime-dark {
+  color: var(--color-lime-dark);
+}
+
+.text-lime-darker {
+  color: var(--color-lime-darker);
+}
+
+.text-lime-darkest {
+  color: var(--color-lime-darkest);
+}
+
+.background-yellow-lightest {
+  background-color: var(--color-yellow-lightest);
+}
+
+.background-yellow-lighter {
+  background-color: var(--color-yellow-lighter);
+}
+
+.background-yellow-light {
+  background-color: var(--color-yellow-light);
+}
+
+.background-yellow {
+  background-color: var(--color-yellow);
+}
+
+.background-yellow-dark {
+  background-color: var(--color-yellow-dark);
+}
+
+.background-yellow-darker {
+  background-color: var(--color-yellow-darker);
+}
+
+.background-yellow-darkest {
+  background-color: var(--color-yellow-darkest);
+}
+
+.text-yellow-lightest {
+  color: var(--color-yellow-lightest);
+}
+
+.text-yellow-lighter {
+  color: var(--color-yellow-lighter);
+}
+
+.text-yellow-light {
+  color: var(--color-yellow-light);
+}
+
+.text-yellow {
+  color: var(--color-yellow);
+}
+
+.text-yellow-dark {
+  color: var(--color-yellow-dark);
+}
+
+.text-yellow-darker {
+  color: var(--color-yellow-darker);
+}
+
+.text-yellow-darkest {
+  color: var(--color-yellow-darkest);
+}
+
+.background-orange-lightest {
+  background-color: var(--color-orange-lightest);
+}
+
+.background-orange-lighter {
+  background-color: var(--color-orange-lighter);
+}
+
+.background-orange-light {
+  background-color: var(--color-orange-light);
+}
+
+.background-orange {
+  background-color: var(--color-orange);
+}
+
+.background-orange-dark {
+  background-color: var(--color-orange-dark);
+}
+
+.background-orange-darker {
+  background-color: var(--color-orange-darker);
+}
+
+.background-orange-darkest {
+  background-color: var(--color-orange-darkest);
+}
+
+.text-orange-lightest {
+  color: var(--color-orange-lightest);
+}
+
+.text-orange-lighter {
+  color: var(--color-orange-lighter);
+}
+
+.text-orange-light {
+  color: var(--color-orange-light);
+}
+
+.text-orange {
+  color: var(--color-orange);
+}
+
+.text-orange-dark {
+  color: var(--color-orange-dark);
+}
+
+.text-orange-darker {
+  color: var(--color-orange-darker);
+}
+
+.text-orange-darkest {
+  color: var(--color-orange-darkest);
+}
+
+/* $6.2.3 - Styles - Colors - Neutral */
+.background-transparent {
+  background-color: transparent;
+}
+
+.background-neutral-0 {
+  background-color: var(--color-neutral-0);
+}
+
+.background-neutral-1 {
+  background-color: var(--color-neutral-1);
+}
+
+.background-neutral-2 {
+  background-color: var(--color-neutral-2);
+}
+
+.background-neutral-3 {
+  background-color: var(--color-neutral-3);
+}
+
+.background-neutral-4 {
+  background-color: var(--color-neutral-4);
+}
+
+.background-neutral-5 {
+  background-color: var(--color-neutral-5);
+}
+
+.background-neutral-6 {
+  background-color: var(--color-neutral-6);
+}
+
+.background-neutral-7 {
+  background-color: var(--color-neutral-7);
+}
+
+.background-neutral-8 {
+  background-color: var(--color-neutral-8);
+}
+
+.background-neutral-9 {
+  background-color: var(--color-neutral-9);
+}
+
+.background-neutral-10 {
+  background-color: var(--color-neutral-10);
+}
+
+.text-neutral-0 {
+  color: var(--color-neutral-0);
+}
+
+.text-neutral-1 {
+  color: var(--color-neutral-1);
+}
+
+.text-neutral-2 {
+  color: var(--color-neutral-2);
+}
+
+.text-neutral-3 {
+  color: var(--color-neutral-3);
+}
+
+.text-neutral-4 {
+  color: var(--color-neutral-4);
+}
+
+.text-neutral-5 {
+  color: var(--color-neutral-5);
+}
+
+.text-neutral-6 {
+  color: var(--color-neutral-6);
+}
+
+.text-neutral-7 {
+  color: var(--color-neutral-7);
+}
+
+.text-neutral-8 {
+  color: var(--color-neutral-8);
+}
+
+.text-neutral-9 {
+  color: var(--color-neutral-9);
+}
+
+.text-neutral-10 {
+  color: var(--color-neutral-10);
+}
+
+/* Background and Text Colors used when IsLight parameter for Badge / Tag / UserInitials is True */
+.background-neutral-0-lightest,
+.background-neutral-1-lightest,
+.background-neutral-2-lightest,
+.background-neutral-3-lightest,
+.background-neutral-4-lightest {
+  background-color: var(--color-neutral-9);
+}
+
+.background-neutral-5-lightest,
+.background-neutral-6-lightest,
+.background-neutral-7-lightest,
+.background-neutral-8-lightest,
+.background-neutral-9-lightest,
+.background-neutral-10-lightest {
+  background-color: var(--color-neutral-0);
+}
+
+.text-neutral-5-darker {
+  color: var(--color-neutral-5);
+}
+
+.text-neutral-6-darker {
+  color: var(--color-neutral-6);
+}
+
+.text-neutral-7-darker {
+  color: var(--color-neutral-7);
+}
+
+.text-neutral-8-darker {
+  color: var(--color-neutral-8);
+}
+
+.text-neutral-9-darker {
+  color: var(--color-neutral-9);
+}
+
+.text-neutral-10-darker {
+  color: var(--color-neutral-10);
+}
+
+/* Background Transparent when used in IE11 to be more specific than CSSVars Polyfill */
+.ie11 .background-transparent {
+  background-color: transparent;
+}
+
+/* $6.2.4 - Styles - Colors - Semantic */
+.background-error-light {
+  background-color: var(--color-error-light);
+}
+
+.background-error {
+  background-color: var(--color-error);
+}
+
+.text-error-light {
+  color: var(--color-error-light);
+}
+
+.text-error {
+  color: var(--color-error);
+}
+
+.background-warning-light {
+  background-color: var(--color-warning-light);
+}
+
+.background-warning {
+  background-color: var(--color-warning);
+}
+
+.text-warning-light {
+  color: var(--color-warning-light);
+}
+
+.text-warning {
+  color: var(--color-warning);
+}
+
+.background-success-light {
+  background-color: var(--color-success-light);
+}
+
+.background-success {
+  background-color: var(--color-success);
+}
+
+.text-success-light {
+  color: var(--color-success-light);
+}
+
+.text-success {
+  color: var(--color-success);
+}
+
+.background-info-light {
+  background-color: var(--color-info-light);
+}
+
+.background-info {
+  background-color: var(--color-info);
+}
+
+.text-info-light {
+  color: var(--color-info-light);
+}
+
+.text-info {
+  color: var(--color-info);
+}
+
+.font-size-m {
+  font-size: var(--font-size-m);
+}
+
+.display-none {
+  display: none;
+}
+
+.layout-side .app-menu-content {
+  background-color: var(--side-menu-color);
+}
+
+.border-soft {
+  border-color: var(--color-border-soft);
+}
+
+.text-main {
+  color: var(--color-text-main);
+}
+
+.text-soft {
+  color: var(--color-text-soft);
+}
+
+.text-subtle {
+  color: var(--color-text-subtle);
+}
+
+.text-main-inverse {
+  color: var(--color-text-main-inverse);
+}
+
+.text-main-on-contrast {
+  color: var(--color-text-on-contrast);
+}
+
+.bg-content {
+  background-color: var(--color-background-content);
+}
+
+.bg-soft {
+  background-color: var(--color-background-soft);
+}
+
+.bg-subtle {
+  background-color: var(--color-background-subtle);
+}
+
+.font-medium {
+  font-weight: var(--font-medium);
+}/*# sourceMappingURL=ClientName_Theme.css.map */
