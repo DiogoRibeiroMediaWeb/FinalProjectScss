@@ -347,6 +347,16 @@ html, body {
   border-color: var(--color-primary);
 }
 
+.tag {
+  padding: var(--space-xs) var(--space-base);
+}
+.tag.tag-small {
+  padding: var(--space-xs) var(--space-s);
+}
+.tag.tag-medium {
+  padding: var(--space-base) var(--space-m);
+}
+
 /* ==================================================================== */
 /*  $4 - Patterns                                                       */
 /* ==================================================================== */

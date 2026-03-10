@@ -1,0 +1,11 @@
+.tag{
+    padding: var(--space-xs) var(--space-base);
+
+    &.tag-small{
+        padding: var(--space-xs) var(--space-s);
+    }
+
+    &.tag-medium{
+        padding: var(--space-base) var(--space-m);
+    }
+}
