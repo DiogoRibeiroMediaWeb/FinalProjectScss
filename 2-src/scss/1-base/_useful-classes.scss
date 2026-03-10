@@ -30,8 +30,20 @@
   .background-secondary-darkest {
     background-color: var(--color-secondary-darkest); }
 
-.text-secondary { color: var(--color-secondary); }
-.text-secondary-darker { color: var(--color-secondary); }
+.text-secondary {
+  color: var(--color-secondary); }
+    .text-secondary-lightest {
+      color: var(--color-secondary-lightest); }
+    .text-secondary-lighter {
+      color: var(--color-secondary-lighter); }
+    .text-secondary-light {
+      color: var(--color-secondary-light); }
+    .text-secondary-dark {
+      color: var(--color-secondary-dark); }
+    .text-secondary-darker {
+      color: var(--color-secondary-darker); }
+    .text-secondary-darkest {
+      color: var(--color-secondary-darkest); }  
 
 /* $6.2.2 - Styles - Colors - Extendend */
 .background-red-lightest { background-color: var(--color-red-lightest); }
