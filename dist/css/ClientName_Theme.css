@@ -339,6 +339,14 @@ html, body {
   width: 100%;
 }
 
+.pagination-button {
+  border-radius: var(--border-radius-circle);
+  border-color: transparent;
+}
+.pagination-button.is--active {
+  border-color: var(--color-primary);
+}
+
 /* ==================================================================== */
 /*  $4 - Patterns                                                       */
 /* ==================================================================== */

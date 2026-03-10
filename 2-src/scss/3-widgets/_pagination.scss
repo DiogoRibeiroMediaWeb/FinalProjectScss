@@ -1,0 +1,8 @@
+.pagination-button {
+    border-radius: var(--border-radius-circle);
+    border-color: transparent;
+
+    &.is--active {
+        border-color: var(--color-primary);
+    }
+}
