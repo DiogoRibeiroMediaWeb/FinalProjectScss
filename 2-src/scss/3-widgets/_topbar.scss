@@ -1,0 +1,29 @@
+.header {
+    background-color: var(--color-primary);
+    display: flex;
+    gap: var(--space-l);
+    border-radius: var(--border-radius-none) var(--border-radius-none)  var(--border-radius-rounded) var(--border-radius-rounded)   ;
+    color: var(--color-neutral-0);
+}
+.desktop .layout:not(.layout-side) .app-menu-links {
+    gap: var(--space-base);
+}
+.layout:not(.layout-side) .app-menu-links a {
+    color: var(--color-neutral-0);
+}
+
+
+// //isto tenho de verificar de acordo com as cores do dark mode e light mode
+// .layout:not(.layout-side) .app-menu-links a.active {
+//     border-bottom: var(--border-size-m) solid var(--border-color-primary, var(--color-neutral-0));
+// }
+
+.layout:not(.layout-side) .app-menu-links a {
+    color: var(--text-neutral-0);
+}
+
+.highlight-styles.header, .dark-styles.header
+{
+    background-color: var(--header-color);
+    color: var(--text-neutral-0);
+}

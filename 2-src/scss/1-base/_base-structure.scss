@@ -5,10 +5,6 @@
 /* ==================================================================== */
 
 :root {
-    /* Color - Brand */
-    --color-primary-dark: #32006b;
-    --color-primary-light: #c199f1;
-
     --color-primary-hover: var(--color-primary-dark);
     --color-primary-selected: var(--color-primary-dark);
 
@@ -102,4 +98,9 @@
   --color-neutral-9:#272b30;
   --color-neutral-10:#101213;
 
+}
+
+.highlight-styles, .dark-styles {
+    --header-color: #5102b0;
+    --text-neutral-0: #ffffff;
 }

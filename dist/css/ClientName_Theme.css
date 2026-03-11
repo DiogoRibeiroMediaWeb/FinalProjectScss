@@ -20,9 +20,6 @@
 /*  Root - CSS Variables                                                */
 /* ==================================================================== */
 :root {
-  /* Color - Brand */
-  --color-primary-dark: #32006b;
-  --color-primary-light: #c199f1;
   --color-primary-hover: var(--color-primary-dark);
   --color-primary-selected: var(--color-primary-dark);
   --header-size: 56px;
@@ -99,6 +96,11 @@
   --color-neutral-8:#4f575e;
   --color-neutral-9:#272b30;
   --color-neutral-10:#101213;
+}
+
+.highlight-styles, .dark-styles {
+  --header-color: #5102b0;
+  --text-neutral-0: #ffffff;
 }
 
 :root {
@@ -355,6 +357,31 @@ html, body {
 }
 .tag.tag-medium {
   padding: var(--space-base) var(--space-m);
+}
+
+.header {
+  background-color: var(--color-primary);
+  display: flex;
+  gap: var(--space-l);
+  border-radius: var(--border-radius-none) var(--border-radius-none) var(--border-radius-rounded) var(--border-radius-rounded);
+  color: var(--color-neutral-0);
+}
+
+.desktop .layout:not(.layout-side) .app-menu-links {
+  gap: var(--space-base);
+}
+
+.layout:not(.layout-side) .app-menu-links a {
+  color: var(--color-neutral-0);
+}
+
+.layout:not(.layout-side) .app-menu-links a {
+  color: var(--text-neutral-0);
+}
+
+.highlight-styles.header, .dark-styles.header {
+  background-color: var(--header-color);
+  color: var(--text-neutral-0);
 }
 
 /* ==================================================================== */
