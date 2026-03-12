@@ -383,6 +383,10 @@ html, body {
   margin-top: 153px;
 }
 
+.layout-side .aside-navigation .app-login-info {
+  padding: var(--space-none) var(--space-l) var(--space-l);
+}
+
 /* ==================================================================== */
 /*  $4 - Patterns                                                       */
 /* ==================================================================== */
