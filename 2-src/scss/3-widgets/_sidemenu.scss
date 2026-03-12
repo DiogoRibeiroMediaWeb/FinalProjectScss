@@ -1,7 +1,26 @@
 .layout-side .aside-navigation .app-menu-content {
     background-color: var(--color-primary);
+    width: 222px;
+    min-width: 222px;
+    border-radius: 0px 24px 24px 0px;
+    transition: 0.2s ease-in-out;
 }
+
+.layout-side .aside-navigation .app-menu-content.is-collapsed  {
+  background-color: var(--color-primary);
+  width: 112px;
+  min-width: 112px;           
+  border-radius: 0px 24px 24px 0px; 
+  transition: 0.2s ease-in-out;
+}
+
 
 .layout-side .aside-navigation .fa{
     color: var(--color-neutral-0);
+    padding-right: var(--space-base);
+}
+
+.layout-side .aside-navigation .app-menu-links {
+    padding: var(--space-none) var(--space-m) var(--space-none);
+    margin-top: 153px;
 }
