@@ -8,9 +8,13 @@
     --color-primary-hover: var(--color-primary-dark);
     --color-primary-selected: var(--color-primary-dark);
 
+    //header
     --header-size: 56px;
     --header-size-content: 48px;
-    --side-menu-size: 280px;
+
+    //side menu
+    --side-menu-collapsed-size: 112px;
+    --side-menu-size: 222px;
 
 
     //foi tudo o que alterei ou criei 
@@ -102,5 +106,8 @@
 
 .highlight-styles, .dark-styles {
     --header-color: #5102b0;
+    --color-primary: #5102b0;
+    --color-neutral-0: #ffffff;
     --text-neutral-0: #ffffff;
 }
+

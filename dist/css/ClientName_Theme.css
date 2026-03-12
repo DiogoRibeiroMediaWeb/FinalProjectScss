@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ==================================================================== */
 /* ==================================================================== */
 /*  ClientName Theme - Based on OutSystems UI                           */
@@ -24,7 +25,8 @@
   --color-primary-selected: var(--color-primary-dark);
   --header-size: 56px;
   --header-size-content: 48px;
-  --side-menu-size: 280px;
+  --side-menu-collapsed-size: 112px;
+  --side-menu-size: 222px;
   /* Color - font-size*/
   --font-size-display: 2.25rem;
   --font-size-h1: 2rem;
@@ -100,6 +102,8 @@
 
 .highlight-styles, .dark-styles {
   --header-color: #5102b0;
+  --color-primary: #5102b0;
+  --color-neutral-0: #ffffff;
   --text-neutral-0: #ffffff;
 }
 
@@ -359,6 +363,36 @@ html, body {
   padding: var(--space-base) var(--space-m);
 }
 
+.layout-side .aside-navigation .app-menu-content {
+  background-color: var(--color-primary);
+  width: var(--side-menu-size);
+  min-width: var(--side-menu-size);
+  border-radius: var(--border-radius-none) var(--border-radius-rounded) var(--border-radius-rounded) var(--border-radius-none);
+  transition: 0.2s ease-in-out;
+}
+
+.layout-side .aside-navigation .app-menu-content.is-collapsed {
+  background-color: var(--color-primary);
+  width: var(--side-menu-collapsed-size);
+  min-width: var(--side-menu-collapsed-size);
+  border-radius: var(--border-radius-none) var(--border-radius-rounded) var(--border-radius-rounded) var(--border-radius-none);
+  transition: 0.2s ease-in-out;
+}
+
+.layout-side .aside-navigation .fa {
+  color: var(--color-neutral-0);
+  padding-right: var(--space-base);
+}
+
+.layout-side .aside-navigation .app-menu-links {
+  padding: var(--space-none) var(--space-m) var(--space-none);
+  margin-top: 153px;
+}
+
+.layout-side .aside-navigation .app-login-info {
+  padding: var(--space-none) var(--space-l) var(--space-l);
+}
+
 .header {
   background-color: var(--color-primary);
   display: flex;
@@ -382,6 +416,248 @@ html, body {
 .highlight-styles.header, .dark-styles.header {
   background-color: var(--header-color);
   color: var(--text-neutral-0);
+}
+
+.toggle {
+  position: absolute;
+  left: -40px;
+  top: 73px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 80px;
+  background: var(--color-neutral-0);
+  border-radius: calc(var(--border-radius-soft) + var(--border-radius-medium)) var(--border-radius-none) var(--border-radius-none) calc(var(--border-radius-soft) + var(--border-radius-medium));
+  padding: var(--space-m) var(--space-s) var(--space-m) var(--space-s);
+  color: var(--color-primary);
+  cursor: pointer;
+}
+.toggle--collapsed {
+  left: -40px;
+  opacity: 1;
+  visibility: visible;
+  position: absolute;
+}
+
+.sidebarwrapper {
+  gap: var(--space-m);
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-xl) var(--space-l) var(--space-xl) var(--space-l);
+  width: 390px;
+  position: relative;
+  overflow: visible;
+}
+.sidebarwrapper--collapsed {
+  width: 0;
+  padding: 0;
+  overflow: visible;
+  position: relative;
+}
+
+.osui-sidebar__header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: var(--space-m);
+}
+
+.sidebar_subtitle {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-medium);
+  color: var(--color-text-subtle-opacity);
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+}
+
+div#b1-b3-Stats {
+  display: flex;
+  width: 100%;
+  height: 76px;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: calc(var(--border-radius-base) + var(--border-radius-extra-smal));
+  background-color: var(--color-blue-lightest);
+}
+
+#Stats .statitem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stat_text {
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-blue-lighter);
+}
+
+.stat_text_sub {
+  font-size: var(--font-size-m);
+  font-weight: var(--font-bold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-blue-light);
+}
+
+div#WeekRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-s);
+}
+
+#WeekRow .dayitem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+div#WeekRow .dayitem--active {
+  background-color: var(--color-blue);
+  border-radius: calc(var(--border-radius-medium) + var(--border-radius-soft));
+  color: var(--color-neutral-0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 5px;
+}
+
+div#WeekRow .dayitem--disabled {
+  color: var(--color-neutral-6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+}
+
+.daydot {
+  height: 4px;
+  border-radius: 50%;
+  background: var(--color-neutral-0);
+  min-width: 4px;
+}
+.daydot--next {
+  background: var(--color-blue);
+}
+
+div#Cards {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: var(--space-m);
+  padding-top: var(--space-m);
+}
+
+div#CardPrimary {
+  width: 100%;
+  height: 196px;
+  background-color: var(--color-blue);
+  border-radius: var(--border-radius-base);
+  position: relative;
+}
+
+#CardPrimary .btn-primary {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: var(--color-neutral-0);
+  color: var(--color-primary);
+  border-radius: var(--border-radius-base) var(--border-radius-none);
+  width: 50px;
+  height: 40px;
+  border: 0;
+}
+
+#CardPrimary .img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: var(--border-radius-none) var(--border-radius-base) var(--border-radius-none) var(--border-radius-none);
+}
+
+div#CarHealth {
+  width: 100%;
+  height: 176px;
+  background-color: #F4FAFF;
+  border-radius: var(--border-radius-base);
+  position: relative;
+}
+
+#CarHealth .img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+a.link {
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-medium);
+  color: #009DDE;
+}
+
+div#CardMeditation {
+  width: 100%;
+  height: 115px;
+  background-color: #F1F9FF;
+  border-radius: var(--border-radius-base);
+  position: relative;
+}
+
+#CardMeditation .img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.avatar-stack {
+  display: flex;
+  align-items: center;
+}
+
+/* cada bolha */
+.avatar-stack .avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  overflow: hidden;
+  border: 3px solid rgba(255, 255, 255, 0.9);
+  margin-left: -14px;
+  flex: 0 0 auto;
+  position: relative; /* para z-index funcionar */
+}
+
+.avatar-stack .avatar:first-child {
+  margin-left: 0;
+}
+
+/* imagem preencher */
+.avatar-stack .avatar img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+/* bolha +12 (tem de continuar a ser .avatar também) */
+.avatar-stack .avatar.avatar--more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1F4ED8; /* ajusta para o azul que queres */
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  overflow: visible; /* para o texto não “cortar” */
 }
 
 /* ==================================================================== */
