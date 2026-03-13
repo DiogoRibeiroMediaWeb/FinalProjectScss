@@ -31,3 +31,8 @@
 .custom-layout-side.layout-side .aside-navigation .btn .fa {
     margin: 0px;
 }
+
+.custom-layout-side.layout-side .header-logo{
+    padding: var(--space-base) var(--space-base);
+    gap: var(--space-base);
+}
