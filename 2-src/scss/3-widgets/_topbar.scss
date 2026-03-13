@@ -1,29 +1,43 @@
-.header {
+.custom-layout-top .header{
     background-color: var(--color-primary);
     display: flex;
     gap: var(--space-l);
     border-radius: var(--border-radius-none) var(--border-radius-none)  var(--border-radius-rounded) var(--border-radius-rounded)   ;
     color: var(--color-neutral-0);
 }
-.desktop .layout:not(.layout-side) .app-menu-links {
+
+.custom-layout-top.layout.layout-top .header-navigation .app-menu-links a {
+    color: white;
+}
+
+.custom-layout-top .content-top-title {
+    display: flex;
+    align-items: center;
+    font-size: var(--font-size-h1);
+    color: var(--color-primary);
+    font-weight: var(--font-medium);
+}
+
+.custom-layout-top .content-breadcrumbs{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+//wrapper para o titulo e os breadcrumbs
+.custom-layout-top .titleswrapper{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.custom-layout-top .titlesbtnswrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.custom-layout-top .btns{
+    display: flex;
     gap: var(--space-base);
-}
-.layout:not(.layout-side) .app-menu-links a {
-    color: var(--color-neutral-0);
-}
-
-
-// //isto tenho de verificar de acordo com as cores do dark mode e light mode
-// .layout:not(.layout-side) .app-menu-links a.active {
-//     border-bottom: var(--border-size-m) solid var(--border-color-primary, var(--color-neutral-0));
-// }
-
-.layout:not(.layout-side) .app-menu-links a {
-    color: var(--text-neutral-0);
-}
-
-.highlight-styles.header, .dark-styles.header
-{
-    background-color: var(--header-color);
-    color: var(--text-neutral-0);
 }
