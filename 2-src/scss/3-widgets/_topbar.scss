@@ -10,7 +10,7 @@
     color: white;
 }
 
-.custom-layout-top .content-top-title {
+.custom-layout-top .content-top-title, .custom-layout-side .content-top-title {
     display: flex;
     align-items: center;
     font-size: var(--font-size-h1);
@@ -18,11 +18,6 @@
     font-weight: var(--font-medium);
 }
 
-.custom-layout-top .content-breadcrumbs{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
 
 //wrapper para o titulo e os breadcrumbs
 .custom-layout-top .titleswrapper{

@@ -1,30 +1,33 @@
-.layout-side .aside-navigation .app-menu-content {
+.custom-layout-side.layout-side .aside-navigation .app-menu-content {
     background-color: var(--color-primary);
-    width: var(--side-menu-size);
-    min-width: var(--side-menu-size);
+    width: var(--side-menu-open-size);
+    min-width: var(--side-menu-open-size);
     border-radius: var(--border-radius-none) var(--border-radius-rounded)  var(--border-radius-rounded) var(--border-radius-none) ;
     transition: 0.2s ease-in-out;
 }
 
-.layout-side .aside-navigation .app-menu-content.is-collapsed  {
+.custom-layout-side.layout-side .aside-navigation .app-menu-content.is-collapsed  {
   background-color: var(--color-primary);
-  width: var(--side-menu-collapsed-size);
-  min-width: var(--side-menu-collapsed-size);           
+  width: var(--side-menu-size);
+  min-width: var(--side-menu-size);           
   border-radius: var(--border-radius-none) var(--border-radius-rounded)  var(--border-radius-rounded) var(--border-radius-none) ;
   transition: 0.2s ease-in-out;
 }
 
 
-.layout-side .aside-navigation .fa{
+.custom-layout-side.layout-side .aside-navigation .fa{
     color: var(--color-neutral-0);
-    padding-right: var(--space-base);
 }
 
-.layout-side .aside-navigation .app-menu-links {
+.custom-layout-side.layout-side .aside-navigation .app-menu-links {
     padding: var(--space-none) var(--space-m) var(--space-none);
     margin-top: 153px;
 }
 
-.layout-side .aside-navigation .app-login-info {
+.custom-layout-side.layout-side .aside-navigation .app-login-info {
     padding: var(--space-none) var(--space-l) var(--space-l);
+}
+
+.custom-layout-side.layout-side .aside-navigation .btn .fa {
+    margin: 0px;
 }

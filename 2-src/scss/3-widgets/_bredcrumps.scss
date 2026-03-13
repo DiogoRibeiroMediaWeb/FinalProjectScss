@@ -1,0 +1,11 @@
+.breadcrumbs-content a{
+    font-size: var(--font-size-s);
+    font-weight: var(--font-regular);
+    color: var(--color-primary);
+}
+
+.custom-layout-top .content-breadcrumbs{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
