@@ -2,6 +2,24 @@ html, body{
   font-family:Raleway, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+// .custom-layout-side.layout.layout-side .main {
+//     margin-right: var(--sidebar-open-size);
+// }
+
+.custom-layout-side .main {
+    margin-right: 0; 
+    transition: margin-right 0.3s ease-in-out; /* Dá o efeito de deslizar */
+}
+
 .custom-layout-side.layout.layout-side .main {
+    margin-left: var(--custom-side-menu-size);
+}
+
+.custom-layout-side.aside-is-open .main {
     margin-right: var(--sidebar-open-size);
+
+}
+
+.content-top-title{
+    margin-bottom: var(--space-none);
 }

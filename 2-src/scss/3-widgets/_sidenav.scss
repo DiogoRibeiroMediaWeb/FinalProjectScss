@@ -6,10 +6,25 @@
     transition: 0.2s ease-in-out;
 }
 
+//isto é o overlay que aparece quando o menu lateral esta aberto, para clicar e fechar o menu
+.custom-layout-side.layout-side .aside-overlay.is-hidden {
+    display: none;
+}
+.custom-layout-side.layout-side .aside-overlay.is-active {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: var(--side-menu-open-size);
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 999;
+}
+
 .custom-layout-side.layout-side .aside-navigation .app-menu-content.is-collapsed  {
   background-color: var(--color-primary);
-  width: var(--side-menu-size);
-  min-width: var(--side-menu-size);           
+  width: var(--custom-side-menu-size);
+  min-width: var(--custom-side-menu-size);           
   border-radius: var(--border-radius-none) var(--border-radius-rounded)  var(--border-radius-rounded) var(--border-radius-none) ;
   transition: 0.2s ease-in-out;
 }
