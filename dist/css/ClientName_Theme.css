@@ -549,8 +549,11 @@ html, body {
   display: flex;
   flex-direction: column;
   gap: var(--space-m);
+  padding: var(--space-m);
   width: 100%;
   overflow: hidden;
+  background-color: var(--color-neutral-0);
+  border-radius: var(--border-radius-rounded);
 }
 .customcard--simple .customcard__content {
   flex-grow: 1;
@@ -578,12 +581,9 @@ html, body {
 }
 .customcard__header img.avatar,
 .customcard__header .avatar {
-  flex-shrink: 0;
   width: 64px;
   height: 64px;
   border-radius: var(--border-radius-circle);
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .customcard__header .header-text {
   flex: 1;
@@ -591,9 +591,22 @@ html, body {
   display: flex;
   flex-direction: column;
   gap: var(--space-xs);
+  min-width: 0;
 }
-.customcard__header .btn, .customcard__header button {
-  flex-shrink: 0;
+.customcard__header .header-text__title {
+  font-size: var(--font-size-h6);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-neutral-9);
+}
+.customcard__header .header-text__meta {
+  font-size: var(--font-size-s);
+  color: var(--color-neutral-6);
+  font-weight: var(--font-bold);
+}
+.customcard__header .header-text__description {
+  font-weight: var(--font-bold);
+  font-size: var(--font-size-s);
+  color: var(--color-neutral-7);
 }
 
 .customcard__content {

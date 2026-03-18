@@ -3,8 +3,11 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-m);
+  padding: var(--space-m);
   width: 100%;
   overflow: hidden;
+  background-color: var(--color-neutral-0);
+  border-radius: var(--border-radius-rounded);
 
   &--simple {
     .customcard__content {
@@ -39,11 +42,9 @@
 
   img.avatar,
   .avatar {
-    flex-shrink: 0;
     width: 64px;
     height: 64px;
     border-radius: var(--border-radius-circle);
-    object-fit: cover;
   }
 
   .header-text {
@@ -52,10 +53,25 @@
     display: flex;
     flex-direction: column;
     gap: var(--space-xs);
-  }
+    min-width: 0;
 
-  .btn, button {
-    flex-shrink: 0;
+      &__title {
+      font-size: var(--font-size-h6);
+      font-weight: var(--font-weight-bold);
+      color: var(--color-neutral-9);
+      }
+
+      &__meta {
+        font-size: var(--font-size-s);
+        color: var(--color-neutral-6);
+        font-weight: var(--font-bold);
+      }
+
+      &__description {
+        font-weight: var(--font-bold);       
+        font-size: var(--font-size-s);
+        color: var(--color-neutral-7);
+      }
   }
 }
 
