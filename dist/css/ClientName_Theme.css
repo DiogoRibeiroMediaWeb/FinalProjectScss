@@ -276,6 +276,8 @@ html, body {
   align-items: center;
   font-weight: var(--font-medium);
   font-size: var(--font-size-s);
+  white-space: nowrap;
+  margin: 0px;
 }
 .btn.btn-secondary {
   color: var(--color-primary);
@@ -555,74 +557,13 @@ html, body {
   background-color: var(--color-neutral-0);
   border-radius: var(--border-radius-rounded);
 }
-.customcard--simple .customcard__content {
-  flex-grow: 1;
-}
-.customcard--detailed .customcard__content {
-  gap: var(--space-l);
-}
-
-.customcard__header {
-  display: flex;
-  align-items: center;
-  gap: var(--space-base);
-  width: 100%;
-}
-.customcard__header--space-between {
-  justify-content: space-between;
-}
-.customcard__header--left {
-  justify-content: space-between;
-  gap: var(--space-m);
-}
-.customcard__header--center {
-  justify-content: center;
-  text-align: center;
-}
-.customcard__header img.avatar,
-.customcard__header .avatar {
-  width: 64px;
-  height: 64px;
-  border-radius: var(--border-radius-circle);
-}
-.customcard__header .header-text {
-  flex: 1;
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-xs);
-  min-width: 0;
-}
-.customcard__header .header-text__title {
-  font-size: var(--font-size-h6);
-  font-weight: var(--font-weight-bold);
-  color: var(--color-neutral-9);
-}
-.customcard__header .header-text__meta {
-  font-size: var(--font-size-s);
-  color: var(--color-neutral-6);
-  font-weight: var(--font-bold);
-}
-.customcard__header .header-text__description {
-  font-weight: var(--font-bold);
-  font-size: var(--font-size-s);
-  color: var(--color-neutral-7);
-}
-
-.customcard__content {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-s);
-  color: var(--color-neutral-6);
-}
-.customcard__content--has-spacer {
+.customcard.has-spacer .content {
   border-top: 1px solid var(--color-neutral-4);
   padding-top: var(--space-m);
   margin-top: var(--space-s);
-}
-.customcard__content span, .customcard__content a {
-  font-size: var(--font-size-s);
-  font-weight: var(--font-weight-regular);
+  display: flex;
+  color: var(--color-neutral-9);
+  font-weight: var(--font-bold);
 }
 
 .customcard__footer {
@@ -635,6 +576,18 @@ html, body {
 }
 .customcard__footer .btn--pill {
   border-radius: var(--border-radius-pill);
+}
+
+.customblockicon {
+  display: flex;
+  align-items: center;
+  gap: var(--space-s);
+  color: var(--color-neutral-9);
+  font-weight: var(--font-bold);
+}
+.customblockicon.clear-text {
+  color: var(--color-neutral-6);
+  font-weight: var(--font-regular);
 }
 
 /* ==================================================================== */

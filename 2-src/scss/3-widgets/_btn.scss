@@ -4,7 +4,8 @@
     align-items: center;
     font-weight: var(--font-medium);
     font-size: var(--font-size-s);
-    
+    white-space: nowrap;
+    margin: 0px;
     &.btn-secondary{
         color: var(--color-primary);
         &:hover{
