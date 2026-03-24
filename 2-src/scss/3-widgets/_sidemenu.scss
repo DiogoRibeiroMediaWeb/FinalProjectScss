@@ -37,3 +37,172 @@
   position: relative;
 }
 }
+
+
+////////////////////////////statswrapper 
+.StatsWrapper{
+  display: flex;
+  gap: var(--space-m);
+  background-color: var(--color-blue-lightest);
+  border-radius: var(--border-radius-rounded);
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-m);
+}
+
+
+/////////////////////////////////Callendar
+.dayitem{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.dayitem--active {
+    background-color: var(--color-blue);
+    border-radius: calc(var(--border-radius-medium) + var(--border-radius-soft));
+    color: var(--color-neutral-0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 5px;
+}
+
+.dayitem--disabled {
+    color: var(--color-neutral-6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+.daydot{
+  height: 4px;
+  border-radius: 50%;
+  background: var(--color-neutral-0);
+  min-width: 4px;
+  &--next {
+    background: var(--color-blue);
+  }
+}
+
+
+
+/////////////////Card Primary///////////////////
+.CardPrimary {
+    width: 100%;
+    height: 196px;
+    background-color: var(--color-blue);
+    border-radius: calc(var(--border-radius-rounded) - var(--border-radius-soft));
+    position: relative;
+    padding: var(--space-m);
+}
+
+.btn-card{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: var(--color-neutral-0);
+  color: var(--color-primary);
+  border-radius: calc(var(--border-radius-rounded) - var(--border-radius-soft))var(--border-radius-none);
+  width: 50px;
+  height: 40px;
+  border: 0;
+}
+
+.img-card-primary{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+.avatar-stack{
+  display: flex;
+  align-items: center;
+}
+
+/* cada bolha */
+.avatar-stack .avatar{
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  overflow: hidden;
+
+  border: 3px solid rgba(255,255,255,0.9);
+  margin-left: -14px;
+  flex: 0 0 auto;
+
+  position: relative; /* para z-index funcionar */
+}
+
+.avatar-stack .avatar:first-child{
+  margin-left: 0;
+}
+
+/* imagem preencher */
+.avatar-stack .avatar img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* bolha +12 (tem de continuar a ser .avatar também) */
+.avatar-stack .avatar.avatar--more{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #1F4ED8; /* ajusta para o azul que queres */
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+
+  overflow: visible; /* para o texto não “cortar” */
+}
+
+
+//////////////////Card Secondary///////////////////
+.CardHealth {
+    width: 100%;
+    height: 176px;
+    background-color: #F4FAFF;
+    border-radius: calc(var(--border-radius-rounded) - var(--border-radius-soft));
+    position: relative;
+    padding: var(--space-m);
+}
+
+.img-card-secondary{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+a.link{
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-medium);
+  color: #009DDE;
+}
+
+
+
+//////////////////Card Tertiary///////////////////
+.CardMeditation {
+    width: 100%;
+    height: 115px;
+    background-color: #F1F9FF;
+    border-radius: calc(var(--border-radius-rounded) - var(--border-radius-soft));
+    position: relative;
+    padding-left: var(--space-m);
+}
+
+.img-card-terteary{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+
