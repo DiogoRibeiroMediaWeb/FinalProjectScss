@@ -246,11 +246,12 @@
 /* ==================================================================== */
 html, body {
   font-family: Raleway, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: var(--color-blue-lightest);
 }
 
 .custom-layout-side .main {
   margin-right: 0;
-  transition: margin-right 0.3s ease-in-out; /* Dá o efeito de deslizar */
+  transition: margin-right 0.3s ease-in-out;
 }
 
 .custom-layout-side.layout.layout-side .main {
@@ -407,6 +408,12 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+
+.breadcrumbs-item {
+  align-items: center;
+  color: var(--color-primary);
+  display: inline-flex;
 }
 
 .tag {
@@ -677,6 +684,12 @@ a.link {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+.osui-accordion-item {
+  background-color: var(--color-neutral-0);
+  margin-bottom: 8px;
+  border-radius: 16px;
 }
 
 /* ==================================================================== */
