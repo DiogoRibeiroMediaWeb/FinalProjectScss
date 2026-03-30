@@ -20,7 +20,7 @@
     transition: 0.2s ease-in-out;
 }
 
-.custom-layout-side.layout.layout-side.aside-is-open.sidebarwrapper{
+.custom-layout-side.layout.layout-side.aside-is-open .sidebarwrapper{
   gap: var(--space-m);
   display: flex;
   flex-direction: column;
