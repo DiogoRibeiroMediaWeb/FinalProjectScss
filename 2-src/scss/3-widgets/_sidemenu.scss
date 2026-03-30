@@ -20,6 +20,13 @@
     transition: 0.2s ease-in-out;
 }
 
+.custom-layout-side.layout.layout-side.aside-is-open .osui-sidebar__content{
+  padding: var(--space-xl) var(--space-l);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+}
+
 .custom-layout-side.layout.layout-side.aside-is-open .sidebarwrapper{
   gap: var(--space-m);
   display: flex;
