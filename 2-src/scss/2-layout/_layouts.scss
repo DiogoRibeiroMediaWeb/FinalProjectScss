@@ -1,6 +1,5 @@
 html, body{
   font-family:Raleway, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  background-color: var(--color-blue-lightest);
 }
 
 
@@ -21,3 +20,9 @@ html, body{
 .content-top-title{
     margin-bottom: var(--space-none);
 }
+
+.custom-layout-side.layout.layout-side .main-content{
+    background-color: var(--color-blue-lightest);
+    border-radius: var(--border-radius-none) var(--border-radius-rounded);
+}
+  
