@@ -120,4 +120,30 @@
             color: var(--color-neutral-6);
         }
     }
+
+    &.btn-success{
+        background-color: var(--color-green-lightest);
+        color: var(--color-success);
+        border: 0px;
+
+        &:hover{
+            background-color: var(--color-green-light);
+        }
+
+        &:active{
+            background-color: var(--color-success);
+            color: var(--color-neutral-0);
+        }
+
+        &:focus{
+            background-color: var(--color-success-dark);
+            border: 2px solid var(--color-info);
+        }
+
+        &:disabled{
+            background-color: var(--color-neutral-4);
+            border-color: var(--color-neutral-6);
+            color: var(--color-neutral-6);
+        }
+    }
 }
