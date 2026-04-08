@@ -8,13 +8,17 @@ html, body{
     transition: margin-right 0.3s ease-in-out;
 }
 
+.custom-layout-side.layout.layout-side{
+    background-color: var(--main-bg-color);
+}
+
 .custom-layout-side.layout.layout-side .main {
     margin-left: var(--custom-side-menu-size);
+    background-color: var(--sidemenu-bg-color);
 }
 
 .custom-layout-side.aside-is-open .main {
     margin-right: var(--sidebar-open-size);
-
 }
 
 .content-top-title{
@@ -22,7 +26,8 @@ html, body{
 }
 
 .custom-layout-side.layout.layout-side .main-content{
-    background-color: var(--color-blue-lightest);
-    border-radius: var(--border-radius-none) var(--border-radius-rounded);
+    background-color: var(--main-bg-color);
+    border-radius: var(--border-radius-none) calc(var(--border-radius-rounded) * 2) calc(var(--border-radius-rounded) * 2) var(--border-radius-none);
+    min-height: 100vh;
 }
   

@@ -16,7 +16,7 @@
     --side-menu-open-size: 222px;
     --custom-side-menu-size: 112px; //trocar porque mexe no rocketui
 
-    --sidebar-open-size: 390px;
+    --sidebar-open-size: 380px;
     --sidebar-closed-size: 0px;
 
 
@@ -41,7 +41,7 @@
     --color-primary-darkest: #28065c;
     --color-primary-darker: #5102b0;
     --color-primary-dark: #6400dc;
-    --color-primary: #8637fb;
+    --color-primary: #8637f8;
     --color-primary-light: #dacdff;
     --color-primary-lighter: #ece4ff;
     --color-primary-lightest: #f4f0ff;
@@ -57,6 +57,40 @@
 
     /* Font - weight */
     --font-medium: 500;
+
+
+    /* button */
+    --btn-nav-hover: rgba(0, 17, 51, 0.2);
+    --btn-nav-active: rgba(0, 17, 51, 0.4);
+
+
+
+    /* background color */
+    --main-bg-color: var(--color-blue-lightest);
+    --sidemenu-bg-color: var(--color-neutral-0);
+    --color-btn-card: var(--color-neutral-0);
+
+    /*icon color*/
+    --btn-nav-icon-color: #ffffff;
+    --btn-toggle-nav: var(--color-primary);
+    --card-color: var(--color-neutral-0);
+    --btn-terceary-color: var(--color-primary-lightest);
+    --btn-color-primary: var(--color-primary);
+    --btn-color-secondary: var(--color-neutral-0);
+    --daydot-color: #ffffff;
+
+    /* border color */
+    --btn-border-color-secondary: var(--color-primary);
+    /* text color */
+    --btn-text-color-secondary: var(--color-primary);
+    --titles-ph-color: var(--color-primary);
+    --color-breadcrumbs: var(--color-primary);
+    --text-card: #ffffff;
+    --color-text-card: #6A7178;
+    --color-text-card-name: #272B30;
+    --color-text-card-profile-info: #ADB5BD;
+    --color-clear-text: #ADB5BD;
+
 }
 
 .highlight-styles,
@@ -81,6 +115,7 @@
      --header-color: var(--color-neutral-3);
 
     color: var(--color-neutral-9);
+    
 }
 
 .os-dark-mode {
@@ -110,7 +145,18 @@
 .highlight-styles, .dark-styles {
     --header-color: #5102b0;
     --color-primary: #5102b0;
-    --color-neutral-0: #ffffff;
+    --main-bg-color: #0E0F10;
+    --btn-toggle-nav: #ffffff;
+    --card-color: #303438;
     --text-neutral-0: #ffffff;
+    --btn-color-primary: #ECE4FF;
+    --btn-color-secondary: #303438;
+    --btn-border-color-secondary: #ECE4FF;
+    --btn-text-color-secondary: #ECE4FF;
+    --sidemenu-bg-color: #303438;
+    --titles-ph-color: #ECE4FF;
+    --color-breadcrumbs: rgba(254, 254, 255, 0.8);
+    --daydot-color: #303438;
+
 }
 

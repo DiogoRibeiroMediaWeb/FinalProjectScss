@@ -1,7 +1,7 @@
-.breadcrumbs-content a{
+.breadcrumbs-content fa{
     font-size: var(--font-size-s);
     font-weight: var(--font-regular);
-    color: var(--color-primary);
+    color: var(--color-breadcrumbs);
 }
 
 .custom-layout-top .content-breadcrumbs{
@@ -14,7 +14,7 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    color: var(--color-primary);
+    color: var(--color-breadcrumbs);
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;

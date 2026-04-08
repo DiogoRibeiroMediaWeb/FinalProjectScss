@@ -7,7 +7,9 @@
     white-space: nowrap;
     margin: 0px;
     &.btn-secondary{
-        color: var(--color-primary);
+        border: 1px solid var(--btn-border-color-secondary);
+        background-color: var(--btn-color-secondary);
+        color: var(--btn-text-color-secondary);
         &:hover{
         background-color: var(--color-neutral-2);
         }
@@ -30,7 +32,7 @@
     
 
     &.btn-primary{
-        background-color: var(--color-primary);
+        background-color: var(--btn-color-primary);
         color: var(--color-neutral-0);
 
         &:hover{
@@ -54,7 +56,7 @@
     }
 
     &.btn-terceary{
-        background-color: var(--color-primary-lightest);
+        background-color: var(--btn-terceary-color);
         border: none;
 
         &:hover{
@@ -102,17 +104,17 @@
         background: transparent;
         border-radius: calc(var(--border-radius-soft) + (var(--border-radius-soft) / 2));
         border-color: transparent;
-        color: var(--color-neutral-0);
+        color: var(--btn-nav-icon-color);
 
         
         &:hover{
-            background-color: var(--color-neutral-7);
+            background-color: var(--btn-nav-hover);
         }
         &:active{
-            background-color: var(--color-neutral-8);
+            background-color: var(--btn-nav-active);
         }
         &:focus{
-            background-color: var(--color-neutral-7);
+            background-color: var(--btn-nav-active);
             border: 2px solid var(--color-info);}
         &:disabled{
             background-color: var(--color-neutral-4);
