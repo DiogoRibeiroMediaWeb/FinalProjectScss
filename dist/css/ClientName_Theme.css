@@ -650,6 +650,10 @@ html, body {
   padding: var(--space-m);
 }
 
+.phone .StatsWrapper {
+  gap: var(--space-base);
+}
+
 .dayitem {
   display: flex;
   flex-direction: column;
