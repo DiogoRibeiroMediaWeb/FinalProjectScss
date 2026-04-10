@@ -21,6 +21,21 @@ html, body{
     margin-right: var(--sidebar-open-size);
 }
 
+//phone or tablet
+.tablet .custom-layout-side.layout.layout-side .main,
+.phone .custom-layout-side.layout.layout-side .main {
+    margin-left: 0px;
+    background-color: var(--sidemenu-bg-color);
+}
+
+.tablet .custom-layout-side.aside-is-open .main, 
+.phone .custom-layout-side.aside-is-open .main {
+    margin-right: 0px;
+}
+
+
+
+
 .content-top-title{
     margin-bottom: var(--space-none);
 }
@@ -30,4 +45,3 @@ html, body{
     border-radius: var(--border-radius-none) calc(var(--border-radius-rounded) * 2) calc(var(--border-radius-rounded) * 2) var(--border-radius-none);
     min-height: 100vh;
 }
-  
