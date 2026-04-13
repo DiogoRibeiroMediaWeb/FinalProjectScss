@@ -6,6 +6,11 @@
     transition: 0.2s ease-in-out;
 }
 
+.phone .custom-layout-side.layout-side .aside-navigation .app-menu-content {
+    width: var(--side-menu-open-size);
+    min-width: var(--side-menu-open-size);
+}
+
 //isto é o overlay que aparece quando o menu lateral esta aberto, para clicar e fechar o menu
 .custom-layout-side.layout-side .aside-overlay.is-hidden {
     display: none;
@@ -32,6 +37,12 @@
 .custom-layout-side.layout-side .aside-navigation .app-menu-links {
     padding: var(--space-none) var(--space-m) var(--space-none);
     margin-top: 153px;
+}
+
+.phone .custom-layout-side.layout-side .aside-navigation .app-menu-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
 }
 
 .custom-layout-side.layout-side .aside-navigation .app-login-info {

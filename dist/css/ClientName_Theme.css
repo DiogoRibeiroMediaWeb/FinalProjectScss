@@ -88,6 +88,7 @@
   --color-nav-text: #ffffff;
   --color-text-dayitem-active: #ffffff;
   --color-text-dayitem: #1666AC;
+  --color-view: #8637f8;
 }
 
 .highlight-styles,
@@ -146,6 +147,7 @@
   --titles-ph-color: #ECE4FF;
   --color-breadcrumbs: rgba(254, 254, 255, 0.8);
   --daydot-color: #303438;
+  --color-view: #dacdff;
 }
 
 :root {
@@ -326,6 +328,14 @@ html, body {
   min-height: 100vh;
 }
 
+.phone .custom-layout-side.layout.layout-side .main-content {
+  border-radius: var(--border-radius-none);
+}
+
+.phone .layout-side .header-navigation {
+  display: flex;
+}
+
 /* ==================================================================== */
 /*  $3 - Widgets                                                        */
 /* ==================================================================== */
@@ -473,6 +483,14 @@ html, body {
   width: 490px;
 }
 
+.phone .osui-search .form-control[data-input] {
+  width: 100%;
+}
+
+.tabçet .osui-search .form-control[data-input] {
+  width: 100%;
+}
+
 .pagination-button {
   border-radius: var(--border-radius-circle);
   border-color: transparent;
@@ -517,6 +535,11 @@ html, body {
   transition: 0.2s ease-in-out;
 }
 
+.phone .custom-layout-side.layout-side .aside-navigation .app-menu-content {
+  width: var(--side-menu-open-size);
+  min-width: var(--side-menu-open-size);
+}
+
 .custom-layout-side.layout-side .aside-overlay.is-hidden {
   display: none;
 }
@@ -543,6 +566,12 @@ html, body {
 .custom-layout-side.layout-side .aside-navigation .app-menu-links {
   padding: var(--space-none) var(--space-m) var(--space-none);
   margin-top: 153px;
+}
+
+.phone .custom-layout-side.layout-side .aside-navigation .app-menu-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
 }
 
 .custom-layout-side.layout-side .aside-navigation .app-login-info {
@@ -599,11 +628,9 @@ html, body {
   right: var(--sidebar-open-size);
 }
 
-.phone .custom-layout-side.layout.layout-side.aside-is-open .toggle,
-.tablet .custom-layout-side.layout.layout-side.aside-is-open .toggle {
-  position: fixed;
-  right: 0px;
-  transition: all 0.3s ease-in-out;
+.phone .custom-layout-side.layout.layout-side .toggle,
+.tablet .custom-layout-side.layout.layout-side .toggle {
+  display: none;
 }
 
 .custom-layout-side.layout.layout-side.aside-is-open .osui-sidebar__content {
@@ -651,7 +678,7 @@ html, body {
 }
 
 .phone .StatsWrapper {
-  gap: var(--space-base);
+  gap: var(--space-xs);
 }
 
 .dayitem {
@@ -696,6 +723,11 @@ html, body {
 }
 .daydot--next {
   background: var(--color-blue);
+}
+
+.phone .custom-layout-side.layout.layout-side .daydot.ThemeGrid_Width1 {
+  margin: 0;
+  width: 0%;
 }
 
 .CardPrimary {
@@ -801,6 +833,18 @@ a.link {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+.phone .img-card-secondary {
+  display: none;
+}
+
+.phone .img-card-terteary {
+  display: none;
+}
+
+.phone .img-card-primary {
+  display: none;
 }
 
 .osui-accordion-item {
@@ -1954,6 +1998,14 @@ a.link {
 
 .sidebar-open-size {
   width: var(--sidebar-open-size);
+}
+
+.titles-ph-color {
+  color: var(--titles-ph-color);
+}
+
+.color-view {
+  color: var(--color-view);
 }
 
 @font-face {

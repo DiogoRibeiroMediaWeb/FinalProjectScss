@@ -45,3 +45,11 @@ html, body{
     border-radius: var(--border-radius-none) calc(var(--border-radius-rounded) * 2) calc(var(--border-radius-rounded) * 2) var(--border-radius-none);
     min-height: 100vh;
 }
+
+.phone .custom-layout-side.layout.layout-side .main-content {
+    border-radius: var(--border-radius-none);
+}
+
+.phone .layout-side .header-navigation {
+    display: flex;
+}
