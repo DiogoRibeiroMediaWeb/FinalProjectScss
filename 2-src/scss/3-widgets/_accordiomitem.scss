@@ -3,3 +3,8 @@
     margin-bottom: 8px;
     border-radius: 16px;
 }
+
+.phone .osui-accordion-item__icon {
+    margin-left: var(--space-s);
+    color: var(--color-view);
+}

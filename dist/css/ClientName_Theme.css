@@ -853,6 +853,11 @@ a.link {
   border-radius: 16px;
 }
 
+.phone .osui-accordion-item__icon {
+  margin-left: var(--space-s);
+  color: var(--color-view);
+}
+
 /* ==================================================================== */
 /*  $4 - Patterns                                                       */
 /* ==================================================================== */
