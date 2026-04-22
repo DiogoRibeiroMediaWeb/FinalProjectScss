@@ -1,0 +1,19 @@
+.custom-progress-bar {
+    width: 190px;
+    height: 2px;
+    border-radius: 2px;
+    background: linear-gradient(to right, 
+        #F7FBFF 60%, 
+        #9B7FEE 40%
+    );
+    display: block; 
+    position: relative;
+}
+
+.marker-icon {
+    position: absolute;
+    top: -28px;
+    transform: translateX(-50%);
+    font-size: 24px;
+    color: #9B7FEE;
+}

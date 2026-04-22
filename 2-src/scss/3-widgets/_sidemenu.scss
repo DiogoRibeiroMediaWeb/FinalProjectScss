@@ -136,7 +136,7 @@
     padding: var(--space-m);
 }
 
-.btn-card{
+.CardPrimary__button{
   position: absolute;
   bottom: 0;
   right: 0;
@@ -148,7 +148,7 @@
   border: 0;
 }
 
-.img-card-primary{
+.CardPrimary__img{
   position: absolute;
   top: 0;
   right: 0;
@@ -211,7 +211,7 @@
     padding: var(--space-m);
 }
 
-.img-card-secondary{
+.CardHealth__img{
   position: absolute;
   bottom: 0;
   right: 0;
@@ -235,7 +235,7 @@ a.link{
     padding-left: var(--space-m);
 }
 
-.img-card-terteary{
+.CardMeditation__img{
   position: absolute;
   bottom: 0;
   right: 0;
@@ -244,15 +244,15 @@ a.link{
 
 
 
-.phone .img-card-secondary {
+.phone .CardHealth__img {
     display: none;
 }
 
-.phone .img-card-terteary {
+.phone .CardMeditation__img {
     display: none;
 }
 
-.phone .img-card-primary {
+.phone .CardPrimary__img {
     display: none;
 }
 

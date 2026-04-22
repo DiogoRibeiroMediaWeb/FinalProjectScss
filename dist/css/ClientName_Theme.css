@@ -89,6 +89,9 @@
   --color-text-dayitem-active: #ffffff;
   --color-text-dayitem: #1666AC;
   --color-view: #8637f8;
+  --color-text-graph-card: #F7FBFF;
+  --color-text-graph-title:#85A5C2;
+  --color-text-graph-subtitle: #59748A;
 }
 
 .highlight-styles,
@@ -334,6 +337,10 @@ html, body {
 
 .phone .layout-side .header-navigation {
   display: flex;
+}
+
+.screen-container {
+  overflow-y: visible;
 }
 
 /* ==================================================================== */
@@ -739,7 +746,7 @@ html, body {
   padding: var(--space-m);
 }
 
-.btn-card {
+.CardPrimary__button {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -751,7 +758,7 @@ html, body {
   border: 0;
 }
 
-.img-card-primary {
+.CardPrimary__img {
   position: absolute;
   top: 0;
   right: 0;
@@ -808,7 +815,7 @@ html, body {
   padding: var(--space-m);
 }
 
-.img-card-secondary {
+.CardHealth__img {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -829,33 +836,142 @@ a.link {
   padding-left: var(--space-m);
 }
 
-.img-card-terteary {
+.CardMeditation__img {
   position: absolute;
   bottom: 0;
   right: 0;
 }
 
-.phone .img-card-secondary {
+.phone .CardHealth__img {
   display: none;
 }
 
-.phone .img-card-terteary {
+.phone .CardMeditation__img {
   display: none;
 }
 
-.phone .img-card-primary {
+.phone .CardPrimary__img {
   display: none;
 }
 
 .osui-accordion-item {
   background-color: var(--color-neutral-0);
   margin-bottom: 8px;
-  border-radius: 16px;
+  border-radius: calc(var(--border-radius-rounded) + var(--border-radius-rounded) / 2);
 }
 
 .phone .osui-accordion-item__icon {
   margin-left: var(--space-s);
   color: var(--color-view);
+}
+
+.osui-accordion-item__icon {
+  color: var(--color-view);
+}
+
+.bars-container {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--space-base);
+  margin-top: var(--space-s);
+}
+
+.bar0 {
+  width: 4px;
+  height: 51px;
+  border-radius: 3px;
+  /* O gradiente usa duas variáveis: --fill-color e --bar-height */
+  background: linear-gradient(to top, #F7FBFF 30%, rgba(247, 251, 255, 0.3) 60%);
+  flex-shrink: 0;
+}
+
+.bar1 {
+  width: 4px;
+  height: 51px;
+  border-radius: 3px;
+  background: linear-gradient(to top, #F7FBFF 60%, rgba(247, 251, 255, 0.3) 40%);
+  flex-shrink: 0;
+}
+
+.bar2 {
+  width: 4px;
+  height: 51px; /* Podes mudar este valor se quiseres a barra mais alta no total */
+  border-radius: 3px;
+  background: linear-gradient(to top, #F7FBFF 55%, rgba(247, 251, 255, 0.3) 65%);
+  flex-shrink: 0;
+}
+
+.bar3 {
+  width: 4px;
+  height: 51px; /* Podes mudar este valor se quiseres a barra mais alta no total */
+  border-radius: 3px;
+  background: linear-gradient(to top, #F7FBFF 85%, rgba(247, 251, 255, 0.3) 15%);
+  flex-shrink: 0;
+}
+
+.bar4 {
+  width: 4px;
+  height: 51px; /* Podes mudar este valor se quiseres a barra mais alta no total */
+  border-radius: 3px;
+  background: linear-gradient(to top, #F7FBFF 90%, rgba(247, 251, 255, 0.3) 10%);
+  flex-shrink: 0;
+}
+
+.bar5 {
+  width: 4px;
+  height: 51px; /* Podes mudar este valor se quiseres a barra mais alta no total */
+  border-radius: 3px;
+  background: linear-gradient(to top, #F7FBFF 60%, rgba(247, 251, 255, 0.3) 40%);
+  flex-shrink: 0;
+}
+
+.bar6 {
+  width: 4px;
+  height: 51px; /* Podes mudar este valor se quiseres a barra mais alta no total */
+  border-radius: 3px;
+  background: linear-gradient(to top, #F7FBFF 70%, rgba(247, 251, 255, 0.3) 30%);
+  flex-shrink: 0;
+}
+
+.bar7 {
+  width: 4px;
+  height: 51px; /* Podes mudar este valor se quiseres a barra mais alta no total */
+  border-radius: 3px;
+  background: linear-gradient(to top, #F7FBFF 90%, rgba(247, 251, 255, 0.3) 10%);
+  flex-shrink: 0;
+}
+
+.bar8 {
+  width: 4px;
+  height: 51px; /* Podes mudar este valor se quiseres a barra mais alta no total */
+  border-radius: 3px;
+  background: linear-gradient(to top, #F7FBFF 60%, rgba(247, 251, 255, 0.3) 40%);
+  flex-shrink: 0;
+}
+
+.bar9 {
+  width: 4px;
+  height: 51px; /* Podes mudar este valor se quiseres a barra mais alta no total */
+  border-radius: 3px;
+  background: linear-gradient(to top, #F7FBFF 50%, rgba(247, 251, 255, 0.3) 5%);
+  flex-shrink: 0;
+}
+
+.custom-progress-bar {
+  width: 190px;
+  height: 2px;
+  border-radius: 2px;
+  background: linear-gradient(to right, #F7FBFF 60%, #9B7FEE 40%);
+  display: block;
+  position: relative;
+}
+
+.marker-icon {
+  position: absolute;
+  top: -28px;
+  transform: translateX(-50%);
+  font-size: 24px;
+  color: #9B7FEE;
 }
 
 /* ==================================================================== */
@@ -925,6 +1041,78 @@ a.link {
 .customblockicon.clear-text {
   color: var(--color-clear-text);
   font-weight: var(--font-regular);
+}
+
+.cardgraphwrapper {
+  display: flex;
+  flex-direction: column;
+  border-radius: calc(var(--border-radius-rounded) - var(--border-radius-soft));
+  height: 160px;
+}
+
+.bg-blue {
+  background-color: var(--background-blue-light);
+}
+
+.bg-purple {
+  background-color: var(--color-violet-lighter);
+}
+
+.bg-pink {
+  background-color: var(--color-pink-lighter);
+}
+
+.graph3 {
+  width: 79px;
+  height: 76px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-bottom: var(--space-base);
+}
+
+.text1 {
+  font-size: var(--font-size-s);
+  color: #85A5C2;
+  font-weight: var(--font-medium);
+}
+.text1.dark-text {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-bold);
+  color: #59748A;
+}
+
+.blockgraphicon {
+  width: 45px;
+  height: 45px;
+  border-radius: var(--border-radius-soft);
+  background-color: #EEF7FE;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.textnumber {
+  font-size: var(--font-size-s);
+  color: #59748A;
+  font-weight: var(--font-bold);
+}
+
+.text3 {
+  font-size: var(--font-size-s);
+  color: #59748A;
+  font-weight: var(--font-medium);
+}
+
+.globochart {
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-red-light);
+  border-radius: var(--border-radius-circle);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: var(--space-xs);
 }
 
 /* ==================================================================== */
@@ -2011,6 +2199,18 @@ a.link {
 
 .color-view {
   color: var(--color-view);
+}
+
+.color-text-graph-card {
+  color: var(--color-text-graph-card);
+}
+
+.color-text-graph-title {
+  color: var(--color-text-graph-title);
+}
+
+.color-text-graph-subtitle {
+  color: var(--color-text-graph-subtitle);
 }
 
 @font-face {

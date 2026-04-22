@@ -1,0 +1,27 @@
+.cardgraphwrapper{
+    display: flex;
+    flex-direction: column;
+    border-radius: calc(var(--border-radius-rounded) - var(--border-radius-soft));
+    height: 160px;
+}
+
+.bg-blue{
+    background-color: var(--background-blue-light);
+}
+
+.bg-purple{
+    background-color: var(--color-violet-lighter);
+}
+
+.bg-pink{
+    background-color: var(--color-pink-lighter);
+}
+
+.graph3{
+    width: 79px;
+    height: 76px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: var(--space-base);
+}
